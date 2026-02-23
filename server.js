@@ -16,8 +16,11 @@ mongoose
     useFindAndModify: false,
     useUnifiedTopology: true,
   })
-  .then(() => console.log('✅ DB connections successful!'))
-  .catch((err) => console.error('❌ DB connection error:', err.message));
+  .then(() => {
+    console.log('✅ DB connections successful!');
+    console.log('Connected to DB:', mongoose.connection.name);
+  });
+// .catch((err) => console.error('❌ DB connection error:', err.message));
 
 //CREATING MODEL FOR SCHEMA (ALWAYS NAME OF MODEL STARTS WITH CAPITAL ALPHABET)
 
