@@ -22,6 +22,8 @@
     "class-methods-use-this": "off",
     "prefer-destructuring": ["error", { "object": true, "array": false }],
     "no-unused-vars": ["off", { "argsIgnorePattern": "req|res|next|val" }],
-    "prefer-arrow-callback": "off"
+    "prefer-arrow-callback": "off",
+    // "arrow-body-style": ["warn", "as-needed"]
+    "arrow-body-style": "off"
   }
 }
