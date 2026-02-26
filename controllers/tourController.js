@@ -21,7 +21,7 @@ exports.getAllTours = catchAsync(async (req, res, next) => {
     .limitFields()
     .paginate();
   const tours = await features.query;
-
+  // new
   // const tours = await Tour.find() //METHOD 2 OF WRITING QUERY IN MONGOOSE
   //   .where('duration')
   //   .equlas(5)
